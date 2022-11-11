@@ -47,6 +47,26 @@ h2 {
     font-size: 20px;
 }
 
+select {
+    border: none;
+    border-radius: 2px;
+    background-color:  rgba(237, 237, 252, 0.7);
+    font-family: Kanit;
+    letter-spacing: 1px;
+    color:rgb(77, 76, 76)
+}
+
+input[type=text] {
+    border: none;
+    border-radius: 2px;
+    background-color:  rgba(237, 237, 252, 0.7);
+    font-family: Kanit;
+    letter-spacing: 1px;
+    color:rgb(77, 76, 76);
+    width: auto;
+}
+
+
 label {
     font-size: 16px;
 }
@@ -72,6 +92,7 @@ textarea {
     letter-spacing: 1px;
     color:rgb(77, 76, 76)
 }
+
 
 button {
     transition-duration: 0.4s;

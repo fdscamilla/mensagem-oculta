@@ -22,11 +22,11 @@
             <select name="lang" id="lang">
                 <option value="base64">Base64</option>
                 <option value="ceasar">Ceasar's Cipher</option>
-            </select>
+            </select><br><br>
+            <input type="text" name="shift" id="shift" placeholder="Shift">
         </div>
 
         
-
         <div class="container">
         
             <textarea type="text" placeholder="Digite sua mensagem..."></textarea>
@@ -36,13 +36,11 @@
         <div class="container">
             <input type="radio" name="encode" id="encode">
             <label for="base64">Codificar</label>
-        </div>
-
-        <div class="container">
             <input type="radio" name="decode" id="decode">
             <label for="base64">Decodificar</label>
         </div>
 
+    
         <div class="container">
         <button id="encode">Codificar</button>
         <button id="decode">Decodificar</button>
