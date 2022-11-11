@@ -52,3 +52,33 @@ var lowerCase = 'abcdefghijklmnopqrstuvwxyz';
 var upperCase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 
 */
+
+// seleção base64/ceasar's cipher
+function linguagem() {
+    if (lang.value == "ceasar") {
+        document.getElementById("ifYes").style.display = "block";
+    } else {
+        document.getElementById("ifYes").style.display = "none";
+    }
+}
+
+
+// deleção codificar/decodificar
+function button1(){
+    if (document.getElementById('encode').checked) {
+        document.getElementById('encodeBtn').style.display = 'block';
+        document.getElementById('decodeBtn').style.display = 'none';
+        
+    } else {
+        document.getElementById('encodeBtn').style.display = 'none'
+    }
+}
+
+function button2(){
+    if (document.getElementById('decode').checked) {
+        document.getElementById('decodeBtn').style.display = 'block';
+        document.getElementById('encodeBtn').style.display = 'none'
+    } else {
+        document.getElementById('decodeBtn').style.display = 'none'
+    }
+}

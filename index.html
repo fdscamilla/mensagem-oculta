@@ -12,6 +12,12 @@
 <body>
     <div class="header">
         <h1>(de)code</h1>
+        <div class="redes">
+            <a href="https://instagram.com/fdscamilla.arq" target="_blank" class="icon"><img src="img/instagram.png" alt="Instagram"></a>
+            <a href="https://www.linkedin.com/in/fdscamillaarq/" target="_blank" class="icon"><img src="img/linkedin.png" alt="LinkedIn"></a>
+            <a href="https://github.com/fdscamilla" target="_blank" class="icon"><img src="img/github.png" alt="Github"></a>
+            <a href="https://www.codewars.com/users/fdscamilla" target="_blank" class="icon"><img src="img/codewars.png" alt="Codewars"></a>
+        </div>
     </div>
     
     
@@ -19,11 +25,15 @@
         
         <div class="container">
             <h2>Selecione a linguagem desejada</h2>
-            <select name="lang" id="lang">
-                <option value="base64">Base64</option>
-                <option value="ceasar">Ceasar's Cipher</option>
+            <select name="lang" id="lang" onchange="linguagem()">
+                <option value="">Selecione...</option>
+                <option id="base64" value="base64">Base64</option>
+                <option id="ceasar" value="ceasar">Ceasar's Cipher</option>
             </select><br><br>
-            <input type="text" name="shift" id="shift" placeholder="Shift">
+
+            <div id="ifYes" style="display: none;">
+                <input type="text" name="shift" id="shift" placeholder="Insira o incremento...">
+            </div>  
         </div>
 
         
@@ -34,16 +44,16 @@
         </div>
 
         <div class="container">
-            <input type="radio" name="encode" id="encode">
-            <label for="base64">Codificar</label>
-            <input type="radio" name="decode" id="decode">
-            <label for="base64">Decodificar</label>
-        </div>
+            <input type="radio" name="button" id="encode" onchange="button1()">
+            <label>Codificar</label>
+            <input type="radio" name="button" id="decode" onchange="button2()">
+            <label>Decodificar</label>
+        </div><br>
 
     
         <div class="container">
-        <button id="encode">Codificar</button>
-        <button id="decode">Decodificar</button>
+        <button id="encodeBtn" style="display: none;">Codificar</button>
+        <button id="decodeBtn" style="display: none;">Decodificar</button>
         </div>
 
 
