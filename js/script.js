@@ -63,7 +63,7 @@ function linguagem() {
 }
 
 
-// deleção codificar/decodificar
+// seleção codificar/decodificar
 function button1(){
     if (document.getElementById('encode').checked) {
         document.getElementById('encodeBtn').style.display = 'block';
@@ -82,3 +82,22 @@ function button2(){
         document.getElementById('decodeBtn').style.display = 'none'
     }
 }
+
+// SGVsbG8gd29ybGQ=
+
+
+
+// função de codificação
+function encode(){
+    if (lang.value == "base64")
+    var encodedStringBtoA = btoa(document.getElementById('msg').value);
+    document.getElementById('result').value = encodedStringBtoA
+}
+
+//função de decodificação
+function decode(){
+    if (lang.value == "base64")
+    var encodedStringAtoB = atob(document.getElementById('msg').value);
+    document.getElementById('result').value = encodedStringAtoB;
+}
+

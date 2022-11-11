@@ -13,8 +13,6 @@
     <div class="header">
         <h1>(de)code</h1>
         <div class="redes">
-            <a href="https://instagram.com/fdscamilla.arq" target="_blank" class="icon"><img src="img/instagram.png" alt="Instagram"></a>
-            <a href="https://www.linkedin.com/in/fdscamillaarq/" target="_blank" class="icon"><img src="img/linkedin.png" alt="LinkedIn"></a>
             <a href="https://github.com/fdscamilla" target="_blank" class="icon"><img src="img/github.png" alt="Github"></a>
             <a href="https://www.codewars.com/users/fdscamilla" target="_blank" class="icon"><img src="img/codewars.png" alt="Codewars"></a>
         </div>
@@ -39,7 +37,7 @@
         
         <div class="container">
         
-            <textarea type="text" placeholder="Digite sua mensagem..."></textarea>
+            <textarea id="msg" type="text" placeholder="Digite sua mensagem..."></textarea>
       
         </div>
 
@@ -52,13 +50,13 @@
 
     
         <div class="container">
-        <button id="encodeBtn" style="display: none;">Codificar</button>
-        <button id="decodeBtn" style="display: none;">Decodificar</button>
+        <button id="encodeBtn" style="display: none;" onclick="encode()">Codificar</button>
+        <button id="decodeBtn" style="display: none;" onclick="decode()">Decodificar</button>
         </div>
 
 
         <div class="container">
-           <textarea type="text" placeholder="Resultado..."></textarea>
+           <textarea id="result" type="text" placeholder="Resultado..."></textarea>
         </div>
     </div>
     
