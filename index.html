@@ -16,14 +16,42 @@
     
     
     <div class="formulario">
-     <div class="container">
-      <form >
-          <textarea type="text" placeholder="Digite sua mensagem..."></textarea>
-      </form>
-     </div>
-     <div class="container">
-        <textarea type="text" placeholder="Resultado..."></textarea>
-     </div>
+        
+        <div class="container">
+            <h2>Selecione a linguagem desejada</h2>
+            <select name="lang" id="lang">
+                <option value="base64">Base64</option>
+                <option value="ceasar">Ceasar's Cipher</option>
+            </select>
+        </div>
+
+        
+
+        <div class="container">
+        
+            <textarea type="text" placeholder="Digite sua mensagem..."></textarea>
+      
+        </div>
+
+        <div class="container">
+            <input type="radio" name="encode" id="encode">
+            <label for="base64">Codificar</label>
+        </div>
+
+        <div class="container">
+            <input type="radio" name="decode" id="decode">
+            <label for="base64">Decodificar</label>
+        </div>
+
+        <div class="container">
+        <button id="encode">Codificar</button>
+        <button id="decode">Decodificar</button>
+        </div>
+
+
+        <div class="container">
+           <textarea type="text" placeholder="Resultado..."></textarea>
+        </div>
     </div>
     
 </body>
