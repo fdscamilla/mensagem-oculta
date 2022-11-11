@@ -83,21 +83,32 @@ function button2(){
     }
 }
 
-// SGVsbG8gd29ybGQ=
-
 
 
 // função de codificação
 function encode(){
-    if (lang.value == "base64")
-    var encodedStringBtoA = btoa(document.getElementById('msg').value);
-    document.getElementById('result').value = encodedStringBtoA
+    if (lang.value == "base64") {
+        var encodedStringBtoA = btoa(document.getElementById('msg').value);
+        document.getElementById('result').value = encodedStringBtoA
+    }
+
+    if (lang.value == "ceasar") {
+        var shift = document.getElementById('shift').value
+        var encodedCeasarString = document.getElementById('msg').value;
+        var convertido = []
+
+        for(var n = 0; n < encodedCeasarString.length; n++){
+            convertido[n] = encodedCeasarString[n].String.fromCharCode(((encodedCeasarString.charCodeAt() - 97 - shift + 26) % 26) + 97);
+        }
+        document.getElementById('result').value = convertido
+    }
 }
 
 //função de decodificação
 function decode(){
-    if (lang.value == "base64")
+    if (lang.value == "base64") {
     var encodedStringAtoB = atob(document.getElementById('msg').value);
     document.getElementById('result').value = encodedStringAtoB;
-}
+    }
 
+}
